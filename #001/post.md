@@ -55,15 +55,34 @@ const  Bob  =  employee({
 })
  
 console.log(Adam({isRaiseGiven:  false}))
-// Employee name: Adam, current salary: 80.00k$, starting salary: 80.00k$  years worked: 1,  raiseGivenThisYear: false
+/* Employee name: Adam, 
+current salary: 80.00k$, 
+starting salary: 80.00k$  
+years worked: 1, 
+raiseGivenThisYear: false 
+*/
 console.log(Bob({isRaiseGiven:  true}))
-// Employee name: Adam, current salary: 103.00k$, starting salary: 100.00k$  years worked: 1,  raiseGivenThisYear: true
-
+/* Employee name: Bob, 
+current salary: 103.00k$, 
+starting salary: 100.00k$  
+years worked: 1, 
+raiseGivenThisYear: true 
+*/
 
 console.log(Bob({isRaiseGiven:  true}))
-// Employee name: Adam, current salary: 88.00k$, starting salary: 80.00k$  years worked: 1,  raiseGivenThisYear: true
+/* Employee name: Adam, 
+current salary: 88.00k$, 
+starting salary: 80.00k$  
+years worked: 2, 
+raiseGivenThisYear: true 
+*/
 console.log(Adam({isRaiseGiven:  true}))
-// Employee name: Adam, current salary: 106.09k$, starting salary: 100.00k$  years worked: 1,  raiseGivenThisYear: true
+/* Employee name: Bob, 
+current salary: 106.09k$, 
+starting salary: 100.00k$  
+years worked: 2, 
+raiseGivenThisYear: true 
+*/
 
 ```
 We created factory functions for an employee, and what is great we can create as many employees as we need, and the internal variables (raiseFactor, name, payout) cannot be changed, and in addition, you cannot override them by mistake. This is huge!
